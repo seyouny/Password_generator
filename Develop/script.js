@@ -1,8 +1,20 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+var upperChar = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+var lowerChar = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+var special = ["!","@","#","$","%","^","&","*",];
+
 function generatePassword() {
-  return prompt("Choose a password")
+  var length = prompt("Choose a length from 8 to 128 characters");
+  var lowerCase = confirm("Do you want lowercase letters?");
+  var upperCase = confirm("Do you want uppercase letters?");
+  var specialChar = confirm("Do you want special characters?");
+  if (lowerCase === true || upperCase === true || specialChar === true){
+    alert ("ok");
+
+  }
+  
 }
 
 // Write password to the #password input
