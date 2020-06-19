@@ -1,16 +1,9 @@
 # 03 JavaScript: Password Generator
 
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
-
-If you are unfamiliar with special characters, take a look at [some examples](https://www.owasp.org/index.php/Password_special_characters).
-
-## User Story
-
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+Create an application that generates a random password based on user-selected 
+criteria. This app will run in the browser and feature dynamically updated HTML
+ and CSS powered by your JavaScript code. It will also feature a clean and polished 
+ user interface and be responsive, ensuring that it adapts to multiple screen sizes.
 
 ## Acceptance Criteria
 
@@ -32,17 +25,30 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 
-The following image demonstrates the application functionality:
+### Built With
 
-![password generator demo](./Assets/03-javascript-homework-demo.png)
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-## Review
 
-You are required to submit the following for review:
+### Deployed Link
 
-* The URL of the deployed application.
+https://seyouny.github.io/Password_generator/
+https://github.com/seyouny/Password_generator
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+### Authors
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+Seyoung Yoon
+
+- [Link to Github](https://github.com/seyouny)
+- [Link to LinkedIn](https://www.linkedin.com/in/stacey-yoon-bbaa7413a/)
+
+See also the list of contributors who participated in this project.
+
+### License
+This project is licensed under the MIT License
+
+###Acknowledgments
+
+Jerome, Manuel, and every partner I've had the pleasure of working with.
