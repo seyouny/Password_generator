@@ -6,23 +6,50 @@ var lowerChar = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p"
 var special = ["!","@","#","$","%","^","&","*",];
 
 function generatePassword() {
+  var passwordPool = [];
+  var randPass = '';
   var length = prompt("Choose a length from 8 to 128 characters");
-  var lowerCase = confirm("Do you want lowercase letters?");
-  var upperCase = confirm("Do you want uppercase letters?");
-  var specialChar = confirm("Do you want special characters?");
-  if (lowerCase === true || upperCase === true || specialChar === true){
-    alert ("ok");
 
-  }
+  if (length >= 8 && length <= 128){
+    var lowerCase = confirm("Do you want lowercase letters?");
+    var upperCase = confirm("Do you want uppercase letters?");
+    var specialChar = confirm("Do you want special characters?");
+    console.log(lowerCase);
+    if (lowerCase === true){
+      passwordPool = passwordPool.concat(upperChar);
+      console.log(passwordPool);
+    }
+    if (upperCase === true) {
+      passwordPool = passwordPool.concat(lowerChar);
+    }
   
+    if (specialChar === true) {
+      passwordPool = passwordPool.concat(special);
+    }
+    if (lowerChar === false || upperChar === false || special === false)
+    {
+      alert("You must select at least one character type to be included in the password.");
+    }
+    for (var i = 0; i < length; i++){
+      var randomInd = Math.floor(Math.random()*passwordPool.length);
+      randPass += passwordPool[randomInd];
+      
+    } 
+  }
+  else {
+    alert("Password length must be at least 8 and up to 128.")
+  }
+  alert("Your password is " + randPass);
+  return randPass;
 }
 
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
-  var passwordText = document.querySelector(password);
-
-  passwordText.value = password;
+  console.log(typeof (password));
+  //var passwordText = document.querySelector(password);
+  
+  document.getElementById("textarea").textContent = password;
 
 }
 
