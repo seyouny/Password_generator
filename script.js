@@ -16,11 +16,11 @@ function generatePassword() {
     var specialChar = confirm("Do you want special characters?");
     console.log(lowerCase);
     if (lowerCase === true){
-      passwordPool = passwordPool.concat(upperChar);
+      passwordPool = passwordPool.concat(lowerChar);
       console.log(passwordPool);
     }
     if (upperCase === true) {
-      passwordPool = passwordPool.concat(lowerChar);
+      passwordPool = passwordPool.concat(upperChar);
     }
   
     if (specialChar === true) {
@@ -39,7 +39,6 @@ function generatePassword() {
   else {
     alert("Password length must be at least 8 and up to 128.")
   }
-  alert("Your password is " + randPass);
   return randPass;
 }
 
@@ -48,8 +47,8 @@ function writePassword() {
   var password = generatePassword();
   console.log(typeof (password));
   //var passwordText = document.querySelector(password);
-  
-  document.getElementById("textarea").textContent = password;
+  console.log(password);
+  document.getElementById("password").textContent = password;
 
 }
 
